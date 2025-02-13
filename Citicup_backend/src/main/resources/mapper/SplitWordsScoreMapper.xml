@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.citycup.mapper.SplitWordsScoreMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.citycup.entity.SplitWordsScore">
+        <result column="symbol" property="symbol" />
+        <result column="env" property="env" />
+        <result column="e1" property="e1" />
+        <result column="e2" property="e2" />
+        <result column="e3" property="e3" />
+        <result column="e4" property="e4" />
+        <result column="soc" property="soc" />
+        <result column="s1" property="s1" />
+        <result column="s2" property="s2" />
+        <result column="s3" property="s3" />
+        <result column="s4" property="s4" />
+        <result column="gov" property="gov" />
+        <result column="g1" property="g1" />
+        <result column="g2" property="g2" />
+        <result column="g3" property="g3" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        symbol, env, e1, e2, e3, e4, soc, s1, s2, s3, s4, gov, g1, g2, g3
+    </sql>
+
+</mapper>

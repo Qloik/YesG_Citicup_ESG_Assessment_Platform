@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.citycup.mapper.EmotionScoreMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.citycup.entity.EmotionScore">
+        <result column="symbol" property="symbol" />
+        <result column="emotion_score" property="emotionScore" />
+        <result column="e_score" property="eScore" />
+        <result column="s_score" property="sScore" />
+        <result column="g_score" property="gScore" />
+        <result column="rank" property="rank" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        symbol, emotion_score, e_score, s_score, g_score, rank
+    </sql>
+
+</mapper>

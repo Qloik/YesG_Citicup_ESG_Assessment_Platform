@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.citycup.mapper.NewsSecurityMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.citycup.entity.NewsSecurity">
+        <result column="NewsID" property="newsid" />
+        <result column="DeclareDate" property="declaredate" />
+        <result column="Title" property="title" />
+        <result column="Symbol" property="symbol" />
+        <result column="emotion" property="emotion" />
+        <result column="esg" property="esg" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        NewsID, DeclareDate, Title, Symbol, emotion, esg
+    </sql>
+
+</mapper>
